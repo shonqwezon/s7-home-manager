@@ -3,11 +3,12 @@
   programs.zsh = {
     enable = true;
 
-    ohMyZsh = {
+    oh-my-zsh = {
       enable = true;
-      theme = "sonicradish"
+      theme = "sonicradish";
     };
-  };
 
-  users.defaultUserShell = pkgs.zsh
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+  };
 }
