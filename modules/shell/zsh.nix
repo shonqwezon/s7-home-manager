@@ -8,7 +8,17 @@
       theme = "sonicradish";
     };
 
-    autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
+    autosuggestion.enable = true;    
+    plugins = [
+      {
+        name = "fast-syntax-highlighting";
+        src = pkgs.fetchFromGitHub {
+          owner = "zdharma-continuum";
+          repo = "fast-syntax-highlighting";
+          rev = "v1.56";
+          sha256 = "sha256-ZihUL4JAVk9V+IELSakytlb24BvEEJ161CQEHZYYoSA=";
+        };
+      }
+    ];
   };
 }
