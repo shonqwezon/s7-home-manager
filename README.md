@@ -15,3 +15,6 @@ make init TARGET_HOST=your_target_host
 ```sh
 make
 ```
+
+## Notes
+1. [MyNixOS](https://mynixos.com/packages) - site to look for nix configuration
