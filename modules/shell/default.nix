@@ -10,7 +10,8 @@
   ];
 
   home.packages = [
-    # Formatters
     pkgs.nixfmt
+    pkgs.jq
+    pkgs.yq
   ];
 }
