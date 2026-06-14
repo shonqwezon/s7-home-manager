@@ -3,6 +3,7 @@
   imports = [
     ./docker.nix
     ./git.nix
+    ./go.nix
     ./k8s.nix
     ./python.nix
     ./zsh.nix
