@@ -24,6 +24,8 @@ in
           name = cfg.userName;
         };
 
+        ignores = [ ".DS_Store" ];
+
         settings = {
           init.defaultBranch = "main";
           credential.helper = "manage";
