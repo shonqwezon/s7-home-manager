@@ -4,6 +4,7 @@
     ./docker.nix
     ./git.nix
     ./k8s.nix
+    ./python.nix
     ./zsh.nix
   ];
 
