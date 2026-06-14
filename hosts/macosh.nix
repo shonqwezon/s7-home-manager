@@ -1,11 +1,12 @@
 { ... }:
-let
-  username = "shon2";
-in
 {
-  home = {
-    inherit username;
-    homeDirectory = "/Users/${username}";
+  s7 = {
+    core = {
+      username = "shon2";
+    };
+    shell = {
+      k8s.enable = false;
+    };
   };
 
   imports = [
