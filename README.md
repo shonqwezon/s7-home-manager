@@ -17,4 +17,4 @@ make
 ```
 
 ## Notes
-1. [MyNixOS](https://mynixos.com/packages) - site to look for nix configuration
+1. [MyNixOS](https://mynixos.com/packages) - home-manager configuration library
