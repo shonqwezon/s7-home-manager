@@ -5,6 +5,7 @@
       username = "shon2";
     };
     shell = {
+      docker.enable = true;
       git.enable = true;
       k8s.enable = false;
     };
