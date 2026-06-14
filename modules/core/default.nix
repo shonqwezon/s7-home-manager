@@ -18,7 +18,7 @@ in
   config = {
     home = {
       username = cfg.username;
-      homeDirectory = "/${homeDirectoryPrefix}/${cfg.username}";
+      homeDirectory = "${homeDirectoryPrefix}/${cfg.username}";
       stateVersion = "26.05";
     };
 

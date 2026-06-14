@@ -1,24 +1,46 @@
-{ pkgs, ... }:
+{ config, lib, pkgs, ... }:
+let
+  cfg = config.s7.shell.git;
+in
 {
-  programs.git = {
-    enable = true;
-
-    settings.user = {
-      email = "shonzbso@gmail.com";
-      name = "Shon Qwezon";
+  options.s7.shell.git = { 
+    enable = lib.mkEnableOption "Whether to enable git module.";
+    userEmail = lib.mkOption {
+      type = lib.types.str;
+      default = "shonzbso@gmail.com";
     };
+    userName = lib.mkOption {
+      type = lib.types.str;
+      default = "Shon Qwezon";
+    };
+  };
+  config = lib.mkIf cfg.enable {
+    programs = {
+      git = {
+        enable = true;
 
-    settings = {
-      init.defaultBranch = "main";
-      credential.helper = "manage";
+        settings.user = {
+          email = cfg.userEmail;
+          name = cfg.userName;
+        };
 
-      core = {
-        editor = "vim";
-        ignorecase = false;
+        settings = {
+          init.defaultBranch = "main";
+          credential.helper = "manage";
+
+          core = {
+            editor = "vim";
+            ignorecase = false;
+          };
+
+          push = {
+            autoSetupRemote = true;
+          };
+        };
       };
 
-      push = {
-        autoSetupRemote = true;
+      lazygit = {
+        enable = true;
       };
     };
   };

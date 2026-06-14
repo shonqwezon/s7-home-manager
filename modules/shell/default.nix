@@ -3,8 +3,6 @@
   imports = [
     ./git.nix
     ./k8s.nix
-    ./lazygit.nix
-    ./zoxide.nix
     ./zsh.nix
   ];
 
