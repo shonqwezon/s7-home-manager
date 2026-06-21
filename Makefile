@@ -7,7 +7,7 @@ init: check-target-host save-target-host
 	nix run home-manager/release-26.05 -- switch --flake .#$(TARGET_HOST) --show-trace
 
 home: check-target-host
-	home-manager switch --flake .#$(TARGET_HOST) --show-trace
+	home-manager switch --flake .#$(TARGET_HOST) --show-trace -b backup
 
 news: check-target-host
 	home-manager news --flake .#$(TARGET_HOST)
