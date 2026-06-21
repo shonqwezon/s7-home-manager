@@ -1,5 +1,4 @@
 {
-  # General
   workbench = {
     colorTheme = "Dark Modern";
     productIconTheme = "fluent-icons";
@@ -71,7 +70,7 @@
   explorer = {
     compactFolders = false;
     autoReveal = "focusNoScroll";
-
+    confirmDelete = false;
   };
   scm.compactFolders = false;
   diffEditor.ignoreTrimWhitespace = false;
