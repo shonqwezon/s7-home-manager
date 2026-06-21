@@ -14,5 +14,6 @@
     pkgs.jq
     pkgs.yq
     pkgs.jetbrains-mono
+    pkgs.tree
   ];
 }
