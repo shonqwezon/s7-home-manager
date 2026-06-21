@@ -13,5 +13,6 @@
     pkgs.nixfmt
     pkgs.jq
     pkgs.yq
+    pkgs.jetbrains-mono
   ];
 }
