@@ -14,6 +14,7 @@
   imports = [
     ../modules/core
     ../modules/shell
+    ../modules/vscode
   ];
 
   home.stateVersion = "26.05";
