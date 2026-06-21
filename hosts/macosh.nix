@@ -9,6 +9,9 @@
       git.enable = true;
       k8s.enable = false;
     };
+    vscode = {
+      profile = "default";
+    };
   };
 
   imports = [
